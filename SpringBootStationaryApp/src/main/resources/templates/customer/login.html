@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RCPIT|STATIONARY</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+  <style>
+#header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background: #E3E6F3;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.logo{
+  display: flex;
+}
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+#navbar li{
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+  
+}
+#navbar li a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 600px;
+  color: #1a1a1a;
+  transition: 0.3s ease;
+
+}
+#navbar li a:hover,
+#navbar li a.active {
+  color:#088178;
+
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+
+}
+.row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content:space-around;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.register {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+</style>
+ 
+</head>
+<body class="body">
+  <div class="maindiv">
+    <section id="header">
+      <div class="logo">
+        <a href="#"></a><img src="rcplogoshop.png" class="logo" alt="" width="150px"></a>
+    </div>
+      
+          <div>
+            <ul id="navbar">
+              <li><a href="/index.html" >Home </a></li>
+              <li><a href="/products/show">Shop</a> </li>
+              
+              <li><a href="/admin" >Admin</a> </li>
+              <li><a href="/customer/login"  class="active">Login</a> </li>
+              <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+           </ul>
+          </div>
+    </section>
+ 
+ <div class="container">
+        <h2>Login</h2>
+        <form action="/customer/login" method="post">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <div class="register">
+            <p>Don't have an account? <a href="/customer/register">Register</a></p>
+        </div>
+    </div>
+
+
+</body>
+</html>
