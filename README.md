@@ -3,11 +3,14 @@ You have to insert Admin details manually in a database-> table-name-> admin fir
 here is the query given:-
 
 use stationary
+
 insert into admin
 values(1,"At post Shirpur 425405","Male" , "Admin" ,"123", "admin@1234")
 
 for access first 10 already added product you have to execute thi queries in your database:-
 use stationary
+
+
 Insert into products(id,name,brand,price,description,image_file_name)
 values(1,"Ball Pen","Zebra",220,"Zebra Blen Ball Pen 0.7mm-Black Ink","zebra-blen-ball-pen-07mmball-.webp" );
 
