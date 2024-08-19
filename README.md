@@ -1,5 +1,6 @@
 Welcome To My repository,
-You have to insert Admin details manually in a database-> table-name-> admin first so that you ca login as a admin to access admin Dashboard.
+
+# You have to insert Admin details manually in a database-> table-name-> admin  first so that you ca login as a admin to access admin Dashboard. Beacause i dont have have written admin creation code.
 here is the query given:-
 
 use stationary
@@ -7,9 +8,9 @@ use stationary
 insert into admin
 values(1,"At post Shirpur 425405","Male" , "Admin" ,"123", "admin@1234")
 
-for access first 10 already added product you have to execute thi queries in your database:-
-use stationary
+# for access first 10 already added product you have to execute thi queries in your  stationary database:-
 
+use stationary
 
 Insert into products(id,name,brand,price,description,image_file_name)
 values(1,"Ball Pen","Zebra",220,"Zebra Blen Ball Pen 0.7mm-Black Ink","zebra-blen-ball-pen-07mmball-.webp" );
@@ -43,4 +44,4 @@ Insert into products(id,name,brand,price,description,image_file_name)
 values(10,"Correction Tape","Plus-japan",200,"plus-japan-correction-tape","plus-japan-correction-tape-wh-1805-776219.webp" );
 
 
------------------Thank You So Much-------------------------------------------
+# -----------------Thank You So Much-------------------------------------------
