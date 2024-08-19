@@ -8,7 +8,7 @@ use stationary
 insert into admin
 values(1,"At post Shirpur 425405","Male" , "Admin" ,"123", "admin@1234")
 
-# for access first 10 already added product you have to execute thi queries in your  stationary database:-
+# for access first 10 already added product you have to execute this queries in your  stationary database:-
 
 use stationary
 
